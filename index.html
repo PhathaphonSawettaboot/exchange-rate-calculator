@@ -12,8 +12,8 @@
     <img src="assets/exchange.png" alt="exchange rate calculator" class="exchange-img">
     <h1>Currency Converter Program</h1>
     <div class="container">
+        <!-- <h3 class="convert-title">Convert from:</h3> -->
         <div class="currency">
-            <h3 class="convert-title">Convert from:</h3>
             <select name="" id="from-currency">
                 <option value="AED">AED</option>
                 <option value="ARS">ARS</option>
@@ -68,15 +68,16 @@
                 <option value="VND">VND</option>
                 <option value="ZAR">ZAR</option>
             </select>
-            <input id="from-currency-amout"></input>
+            <input id="from-currency-amout" value="1"></input>
         </div>
 
-        <button class="btn">Get Conversion Rate</button>
+        <div class="swap-container">
+            <button class="btn">Get Conversion Rate</button>
+            <div class="rate" id="rate">Amount</div>
+        </div>
 
-        <div class="rate" id="rate">Amount</div>
-
+        <!-- <h3 class="convert-title">Convert to:</h3> -->
         <div class="currency">
-            <h3 class="convert-title">Convert to:</h3>
             <select name="" id="to-currency">
                 <option value="AED">AED</option>
                 <option value="ARS">ARS</option>

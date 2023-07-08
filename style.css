@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 /* VARIABLES */
-:root{
+:root {
     --var-color-white: #F4F6FF;
     --var-color-yellow: #FFCB74;
     --var-color-orange: #EA907A;
@@ -10,12 +10,12 @@
 }
 
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--var-color-white);
     display: flex;
     flex-direction: column;
@@ -26,16 +26,55 @@ body{
     padding: 20px;
 }
 
-.exchange-img{
+.exchange-img {
     width: 20vh;
     height: 20vh;
 }
 
-.btn{
+.btn {
     color: var(--var-color-white);
     background-color: var(--var-color-orange);
     cursor: pointer;
     border-radius: 8px;
+    padding: 10px 20px 10px 20px;
     font-size: 18px;
-    padding: 5px 12px;
+}
+
+.currency {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency select {
+    appearance: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    border: 1px solid #dedede;
+    background: transparent;
+}
+
+.currency input {
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    border: 1px solid #dedede;
+    background: transparent;
+    border-radius: 5px;
+    text-align: right;
+}
+
+select:focus, input:focus{
+    outline:var(--var-color-blue);
+    border-color: va;
+}
+
+.swap-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.rate{
+    font-size: 20px;
 }
