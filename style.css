@@ -26,6 +26,10 @@ body {
     padding: 20px;
 }
 
+h1{
+    text-align: center;
+}
+
 .exchange-img {
     width: 20vh;
     height: 20vh;
@@ -33,7 +37,7 @@ body {
 
 .btn {
     color: var(--var-color-white);
-    background-color: var(--var-color-orange);
+    background-color: var(--var-color-blue);
     cursor: pointer;
     border-radius: 8px;
     padding: 10px 20px 10px 20px;
